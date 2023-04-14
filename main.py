@@ -88,6 +88,9 @@ def route_path(url=''):
         print('Reset pages_generated.')
 
     path = f'/{url}'
+    while path.endswith('/'):
+        path = path[:-1]
+
     if path == '/favicon.ico':
         return 'no', 404
 
