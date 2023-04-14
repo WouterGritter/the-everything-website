@@ -45,7 +45,7 @@ def route_cached():
 
     return f'<html>' \
            f'<head>' \
-           f'  <title>Cached pages [Not AI Generated]</title>' \
+           f'  <title>Cached pages</title>' \
            f'</head>' \
            f'<body>' \
            f'  <h1>Cached AI-generated pages:</h1>' \
@@ -70,6 +70,7 @@ def route_root():
            f'  <h2>AI-generated pages.</h2>' \
            f'  <p>' \
            f'  Every page on this website except this one and <a href="/cached">the list of cached pages</a> are AI-generated.<br>' \
+           f'  Because AI is slow, loading a page for the first time can take a few seconds.<br>' \
            f'  Feel free to enter any URL or topic you\'d like, or use this input section below:<br>' \
            f'  <input type="text" id="url" placeholder="{choice(placeholders)}">' \
            f'  <button onclick="location.href=document.getElementById(\'url\').value.replaceAll(\' \', \'-\')">Go</button><br>' \
